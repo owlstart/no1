@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>java출력</title>
+  </head>
+  <body>
+    <span style="float:right;">
+      <button class="button">
+        <a href="test.html"target="_blank">HTML</a></button>
+      <button class="button2">
+        <a href="test%20TC%20.html"target="_blank">CSS</a></button>
+      <button class="button3">
+        <a href="test%20TJ.html"target="_blank">JAVASCRIPT</a></button>
+      <button class="button button">
+        <a href="test%20TS.html"target="_blank">SQL</a></button>
+      </span>
+
+      <h1>출력</h1>
+      <div id="grid">
+      <ol>
+        <li><a href="test%20TJ.html"target="_self">javascript</a></li>
+        <li><a href="test%20TJ1.html"target="_self">JS문</a></li>
+        <li><a href="test%20TJ7.html"target="_self">JS문법</a></li>
+        <li><a href="test%20TJ2.html"target="_self">배열</a></li>
+        <li><a href="test%20TJ3.html"target="_self">태그</a></li>
+        <li><a href="test%20TJ4.html"target="_self">객체속성</a></li>
+        <li><a href="test%20TJ5.html"target="_self">외부파일</a></li>
+        <li><a href="test%20TJ6.html"target="_self">출력</a></li>
+        <li><a href="test%20TJ8.html"target="_self">제약조건유효</a></li>
+      </ol>
+      <div id="article">
+
+        <h2>출력</h2>
+        <h2>자바 스크립트 디스플레이 가능성</h2>
+
+         <h2>자바 스크립트는 다른 방식으로 데이터를 "표시"할 수 있습니다 :</h2>
+         <ul>
+           <li>, HTML 요소로 작성하여 <span>innerHTML.</span></li>
+           <li>을 사용하여 HTML 출력에 쓰기 <span>document.write().</span> </li>
+           <li>, 경고 상자에 쓰기 사용 <span>window.alert().</span> </li>
+           <li>브라우저 콘솔에 쓰기 사용 <span>console.log().</span> </li>
+         </ul>
+
+         <hr>
+         <h2>innerHTML 사용</h2>
+         <strong>HTML</strong>요소에 액세스하기 위해  <strong>JavaScript</strong>는 <span>document.getElementById(id)</span>메소드를 사용할 수 있습니다.
+         이 <span>id</span>속성은 <strong>HTML</strong>요소를 정의 합니다.
+         이 <span>innerHTML</span>속성은 <strong>HTML</strong>내용을 저의 합닏다.
+         <h2>예</h2>
+         <h2>&lt;body&gt; <br>
+
+         &lt;h2&gt;My First Web Page&lt;&#47;h2&gt; <br>
+         &lt;p&gt;My First Paragraph&#46;&lt;&#47;p&gt; <br>
+
+         &lt;p id&#61;&#34;demo&#34;&gt;&lt;&#47;p&gt; <br>
+
+         &lt;script&gt; <br>
+         document&#46;getElementById&#40;&#34;demo&#34;&#41;&#46;innerHTML &#61; 5 + 6&#59; <br>
+         &lt;&#47;script&gt; <br>
+
+         &lt;&#47;body&gt; <br>
+         &lt;&#47;html&gt; <br></h2>
+         <mark>HTML 요소의 innerHTML 속성을 변경하는 것은 HTML로 데이터를 표시하는 일반적인 방법입니다.</mark>
+         <hr>
+         <h2>document.write () 사용</h2>
+         <h2>테스트 목적으로 다음을 사용하는 것이 편리합니다 <span>docunent.write()</span>. </h2>
+         <h2>예</h2>
+
+          <h2><span>&lt;body&gt;</span> <br>
+
+         <span>&lt;h2&gt;</span>My First Web Page<span>&lt;&sol;h2&gt;</span> <br>
+         <span>&lt;p&gt;</span>My first paragraph.<span>&lt;&sol;p&gt;</span> <br>
+
+         <span>&lt;p&gt;</span>Never call document.write after the document has finished loading. <br>
+         It will overwrite the whole document.<span>&lt;&sol;p&gt;</span> <br>
+
+         <span>&lt;script&gt;</span> <br>
+         document.write&#40;5 &#43; 6&#41;&#59; <br>
+         <span>&lt;&sol;script&gt; </span><br>
+
+         <span>&lt;&sol;body&gt;</span> <br>
+         <span>&lt;&sol;html&gt;</span> <br></h2>
+         <h2>나의 첫 웹 페이지 <br>
+            나의 첫 단락. <br>
+
+            문서 로딩이 완료된 후에는 document.write를 호출하지 마십시오. <br> 전체 문서를 덮어 씁니다. <br>
+
+            11</h2>
+
+
+            <h2> <mark>HTML 문서가로드 된 후 document.write ()를 사용하면 기존의 모든 HTML 이 삭제됩니다 .</mark> </h2>
+
+            <h2> <span>&lt;body&gt;</span>  <br>
+                <span>&lt;h2&gt;</span> My First Web Page <span>&lt;&sol;h2&gt;</span>  <br>
+                <span> &lt;p&gt;</span>My fist paragraph&#46; <span>&lt;&sol;p&gt; </span> <br>
+
+                <span> &lt;button type</span>&#61;&#34;button&#34; <span>onclick</span> &#61;&#34;document&#46;write(5+6)&#34; <span>&gt;</span> Try it <span>&lt;&sol;button&gt;</span>  <br>
+                <span>&lt;&sol;body&gt;</span>      <br>
+                <span> &lt;&sol;html&gt;</span></h2>
+
+                <h2><mark>document.write () 메소드는 테스트에만 사용해야합니다.</mark> </h2>
+                <hr>
+
+                <h2> widow.alert()사용 <br>경고 상자를 사용하여 데이터를 표시 할 수 있습니다. </h2>
+                <h2><span>&lt;body&gt;</span> <br>
+
+                <span> &lt;h2&gt;</span> My First Web Page& <span>lt;&sol;h2&gt;</span>  <br>
+                <span>&lt;p&gt;</span>  My first paragraph&#46; <span>&lt;&sol;p&gt;</span>  <br>
+
+                <span>&lt;script&gt;</span> <br>
+                window&#46;alert&#40;5 + 6&#41;&#59;
+                <span>&lt;&sol;script&gt;</span> <br>
+
+                <span>&lt;&sol;body&gt;</span></h2>  <br>
+                <hr>
+                <h2>console.log() <br> 디버깅 목적을 이 <span>console.log()</span>방법을 사용하여 데이터를 표시 할수 있습니다. </h2>
+                <h2>예</h2>
+                <span> &lt;body&gt; </span><br>
+
+                <span>&lt;script&gt;</span>  <br>
+                console&#46;log&#40;5 + 6&#41;&#59; <br>
+                <span>&lt;&sol;script&gt;</span>  <br>
+
+                <span>&lt;&sol;body&gt;</span>  <br>
+
+
+
+
+
+
+
+
+
+         </body>
+         </html>

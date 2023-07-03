@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>CSS link</title>
+  </head>
+  <body>
+    <span style="float:right;">
+    <button class="button"><a href="test.html"target="_blank">HTML</a></button>
+    <button class="button2"><a href="test%20TC%20.html"target="_blank">CSS</a></button>
+    <button class=" button3"><a href="test%20TJ.html"traget="_blank">JAVASCRIPT</a></button>
+    <button class="button button4"><a href="test%20TS.html"target="_blank">SQL</a></button>
+    <button class=" button5"><a href="test%20Ti.html"target="_blank">info</a></button>
+
+    </span>
+
+    <h1> CSS link</h1>
+    <div id="grid">
+    <ol>
+      <li><a href="test%20TC%20.html" target="_self">css</a></li>
+      <li><a href="test%20TC2.html" target="_self">CSS 속성</a></li>
+      <li><a href="test%20TC1.html" target="_self">CSS Float</a></li>
+      <li><a href="test%20TC3.html" target="_self">box-sizing</a></li>
+      <li><a href="test%20TC4.html" target="_self">CSS link</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">height</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">CSS block</a></li>
+      <li><a href="test%20TC6.html"target="_self">RWD반응형</a></li>
+      <li><a href="test%20TC8.html"target="_self">border</a></li>
+      <li><a href="test%20TC9.html"target="_self">Selectors</a></li>
+
+    </ol>
+    <div id="article">
+      <h2>CSS link</h2>
+      <div >
+        <strong>HTML</strong><span style="color:red">&lt;link&gt;</span>태그를 이용하여 외부 파일을 포함한다. <br>
+      <span class="span">&lt;head&gt;</span> <br>
+      &nbsp;<span class="span">&lt;link href</span>="style&comma;css"&nbsp;<span class="span">type</span>="text&sol;css" <br>
+
+      <span class="span">&lt;&sol;head&gt;</span>
+      <h2>import</h2>이용한 외부 CSS파일
+      <span >&#64;import</span>CSS선언을 이용하여 다음 위치에 외부 CSS파일을 포함한다.
+      <ul>
+        <li>문서의 <span class="span">&lt;head&gt;</span> xorm </li>
+        <li>다른 CSS 파일&#46;이 경우 하나의 CSS 파일이 여러개의 다른 CSS파일을 중첩하여 포함 할수 있다.</li>
+      </ul>
+      <hr>
+      <h2>Dropdown드롭 버튼 링크</h2>
+      <div class="dropdown">
+        <button class="dropdown">Dropdown드롭</button>
+        <div class="dropdown-content">
+          <a href="file:///D:/ago/%EC%83%88%20%ED%8F%B4%EB%8D%94/CSS%20Dropdown%20button.html">드롭 Link 버튼 1</a>
+          <a href="file:///D:/ago/%EC%83%88%20%ED%8F%B4%EB%8D%94/CSS%20Dropdown%20Menu%20button.html">메뉴드롭 Link버튼  2</a>
+          <a href="file:///D:/ago/h/Travel%20%EC%97%AC%ED%96%89/css%20style%20link%20button%20.html">스타일 Link버튼  3</a>
+          <a href="file:///D:/ago/%EC%83%88%20%ED%8F%B4%EB%8D%94/CSS%20Dropdown%20Left%20Right%20button.html"target="_blank">오른쪽 왼쪽 Link  4</a>
+
+        </div>
+
+      </div>
+
+    <hr>
+
+
+      <h2>하이퍼 링크에 다른 스타일 추가</h2>
+      이곳에서는 변화를 볼수 없습니다.
+      링크모음으로<br>
+      <strong>예</strong><!--이곳은 보이지 않습니다
+        <style>
+          a.one:link{color:aqua;}
+          a.one:visited{color: lime;}
+          a.one:hover{color: red;}
+
+          a.two:{color: lawngreen ;}
+          a.two:{color: blue;}
+          a.two:{color: yellow;}
+
+          a.three:link{color: magenta;}
+          a.three:visited{color: green;}
+          a.three:hover{background:gold ;}
+
+          a.four:link{color: red;}
+          a.four:visited{color: blue;}
+          a.four:hover{font-family:monospace;}
+
+          a.five:link{
+            color: darkgreen;
+            text-decoration: none;
+          }
+          a.five:visited{
+            color: green;
+            text-decoration: none;
+          }
+          a.five:hover{
+            text-decoration: underline;
+          }
+
+
+      </style>
+
+      -->
+
+      <p> <b> <a class="one"href="test3.html"target="_blank">이 링크는 색이 바뀝니다.</a> </b> HTMLLink로가기</p>
+      <p> <b> <a class="two"href="file:///D:/ago/h/Travel%20%EC%97%AC%ED%96%89/css%20link%20%EB%AA%A8%EC%9D%8C.html"target="_blank">이 링크는 글꼴이 변경됩니다.</a> </b>링크모음으로 </p>
+      <p> <b> <a class="three"href="/css%20link%20모음.html"target="_blank">이 링크는 배경색이 변경도됩니다.</a> </b> </p>
+      <p> <b> <a class="four"href="/css%20link%20모음.html"target="_blank">이 링크는 글꼴 모음을 변경합니다.</a> </b> </p>
+      <p> <b> <a class="five"href="/css%20link%20모음.html"target="_blank">이 링크는 텍스트 장식을 변경합니다.</a> </b> </p>
+
+      예2
+      <!--body 본문에서 사용하는 보이지 않습니다.
+      style
+      a:link{
+        background-color: yellow;
+      }
+      a:visited{
+        background-color: cyan;
+      }
+      a:hover{
+        background-color: hotpink;
+      }-->
+
+
+
+      a:link{
+        background-color: yellow;
+      }
+      a:visited{
+        background-color: cyan;
+      }
+      a:hover{
+        background-color: hotpink;
+      }
+
+      순서대로 적용되어야 효과적입니다
+
+      참고 : a : hover는 CSS 정의에서 a : link 및 a : visited 뒤에 와야 효과적입니다.
+
+      참고 : a : active는 CSS 정의에서 a : hover 뒤에 와야 효과적입니다.
+      <hr>
+      <h2>Styling Links 스타일링 링크</h2>
+      <h3>css를 사용하면 링크를 다양한 방식으로 스타일을 할 수 있습니다. <br>
+      <ul>
+        <li>color</li> <br><strong>예</strong> <br>&lt;style&gt;<br><strong style="color:red">a&#123;</strong><br>colot&&#58;&nbsp;hotpink&#59;<br><strong>&#125;</strong><br>
+        &lt;p&gt; &lt;<span style="color:red">a href&#34;</span>&#61;.html <strong style="color:red">"target&#61;"</strong>_blank <strong style="color:red">&#34;</strong>&gt;새창에서 링크&lt;/a&gt; &lt;/p&gt;
+
+
+        <p> <a href="test3.html"target="_blank">새창에서 링크</a> </p>
+        <li>font-family</li>
+        <li>background</li>
+      </ul></h3>
+      <hr>
+      <h3>고급 링크 버튼 <br>CSS속성을 결합하여 링크상자 &#47; 단추로 표시</h3>
+
+        <strong>예</strong><br><br>이 div는 더 작습니다. 너비300px &sol;높이 100px입니다<br>      <!--이곳은 css style button 입니다.
+              a:link, a:visited{
+          background-color: #f44336 ;
+          color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          }
+          a:hover,a:active{
+            background-color: red;
+          }이곳 까지 보이지 않습니다.-->
+
+          <h2>link button</h2>
+          <p>버튼스타일 의 링크입니다</p>
+          <a href="file:///D:/ago/h/Travel%20%EC%97%AC%ED%96%89/css%20style%20link%20button%20.html"target="_blank">css style button</a>
+          <br><br><br>
+          <hr>
+          <h1>a태그로 링크 걸기</h1>
+      <a href="file:///D:/test/test.png/test%20TC4.html">
+        <h2>열린창에서 링크</h2>
+      </a>
+
+      <h1>a태그의 target 속성값</h1>
+      <h2><a href="file:///D:/test/test.png/test%20TC4.html" target="_blank">blank  &lt;새창에서 링크&gt;</a></h2>
+      <h2><a href="file:///D:/test/test.png/test%20TC4.html" target="_self">self &lt;열린창에서 링크&gt;</a></h2>
+      <h2><a href="file:///D:/test/test.png/test%20TC4.html" target="_parent">parent &lt;열린창에서 링크&gt;</a></h2>
+      <h2><a href="file:///D:/test/test.png/test%20TC4.html" target="_top">top &lt;현재창에머뭄&gt;</a></h2>
+      <h2><a href="file:///D:/test/test.png/test%20TC4.html" target="myframe">myframe&lt;자신의 싸이트 프렝임&gt;</a></h2>
+      <iframe name="myframe" style="width:356%; height: 587px"></iframe>
+      <br><br><br><br>
+
+
+
+
+
+
+
+        </body>
+      </html>

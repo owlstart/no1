@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>CSSRWD</title>
+  </head>
+  <body>
+    <span style="float:right;">
+    <button class="button"><a href="test.html"target="_blank">HTML</a></button>
+    <button class="button2"><a href="test%20TC%20.html"target="_blank">CSS</a></button>
+    <button class="button button3"><a href="test%20TJ.html"target="_blank">JAVASCRIPT</a></button>
+    <button class="button button4"><a href="test%20TS.html"target="_blank">SQL</a></button>
+    <button class=" button5">
+    <a href="test%20Ti.html"target="_blank">info</a></button>
+
+
+    </span>
+
+    <h1>CSS태그</h1>
+    <div id="grid">
+    <ol>
+      <li><a href="test%20TC%20.html" target="_self">css</a></li>
+      <li><a href="test%20TC2.html" target="_self">CSS 속성</a></li>
+      <li><a href="test%20TC1.html" target="_self">CSS Float</a></li>
+      <li><a href="test%20TC3.html" target="_self">box-sizing</a></li>
+      <li><a href="test%20TC4.html" target="_self">CSS link</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">height</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">CSS block</a></li>
+      <li><a href="test%20TC6.html"target="_self">RWD반응형</a></li>
+      <li><a href="test%20TC8.html"target="_self">border</a></li>
+      <li><a href="test%20TC9.html"target="_self">Selectors</a></li>
+
+    </ol>
+    <div id="article">
+        <h2>CSS반응형 웹디자인&#45;RWD</h2>
+
+        <h3>Responsive Web Design &#45; Introduction</h3>
+        <p>반응 형 웹 디자인은 모든 장치에서 웹 페이지를보기 좋게 만듭니다&#46;</p>
+        <p>반응 형 웹 디자인은 HTML과 CSS 만 사용합니다&#46;</p>
+        <p>반응 형 웹 디자인은 프로그램이나 JavaScript가 아닙니다&#46;</p>
+        <p>웹 페이지는 데스크톱, 태블릿 및 전화 등 다양한 장치를 사용하여 볼 수 있습니다&#46; 장치와 상관없이 웹 페이지가보기 좋고 사용하기 쉬워야합니다&#46;</p>
+
+      
+        <h2>CSS 뷰포트</h2>
+        <h3>CSS Flexbox 속성</h3>
+        <table id="customers">
+          <tr>
+            <th>Property 속성</th>
+            <th>Description 설명</th>
+            <th>CSS구문</th>
+            <th>JavaScript 문법</th>
+          </tr>
+          <tr>
+            <td>display </td>
+            <td>HTML요소에사용되는 상자유형을 지정</td>
+            <td>display&#58; value&#59;
+              <ul>
+                <li>inline&#59;</li>
+                <li>block&#59;</li>
+                <li>contents&#59;</li>
+                <li>flex&#59;</li>
+                <li>grid&#59;</li>
+                <li>inline-block&#59;</li>
+                <li>inline-flex&#59;</li>
+                <li>inline-grid&#59;</li>
+                <li>inline-table&#59;</li>
+                <li>list-item&#59;</li>
+                <li>run-in&#59;</li>
+                <li>table&#59;</li>
+                <li>table-caption&#59;</li>
+                <li>table-column-group&#59;</li>
+                <li>table-header-group&#59;</li>
+                <li>table-footer-group&#59;</li>
+                <li>table-row-group&#59;</li>
+                <li>table-cell&#59;</li>
+                <li>table-column&#59;</li>
+                <li>table-row&#59;</li>
+                <li>none&#59;</li>
+                <li>initial&#59;</li>
+                <li>inherit&#59;</li>
+              </ul>
+            </td>
+            <td>object&#46;style&#46;display&#61;&#34;none&#34;</td>
+          </tr>
+          <tr>
+            <td>flex&#45;direction</td>
+            <td>유연한 항목 방향을 지정</td>
+            <td>flex&#45;direction&#58; row&#59;
+              <ul>
+                <li>row&#45;reverse&#59; </li>
+                <li>column&#59;</li>
+                <li>column&#45;reverse&#59;</li>
+                <li>initial&#59;</li>
+                <li>inherit&#59;</li>
+              </ul></td>
+            <td>object &#58;style&#58;flexDirection &#61; &#34;column&#45;reverse&#34;</td>
+          </tr>
+          <tr>
+            <td>justity&#45;content</td>
+            <td>
+              <ul>
+                <li>항목 중앙에 품목을정렬</li>
+                <li>기본축공간을사용하지 않는경우 <br> 항목가로로 정렬 </li>
+              </ul></td>
+              <td>justify&#45;content&#58;
+                <ul>
+                  <li>flex&#45;start&#59;</li>
+                  <li>flex&#45;end&#59;</li>
+                  <li>center&#59;</li>
+                  <li>space&#45;between&#59;</li>
+                  <li>space&#45;around&#59;</li>
+                  <li>initial&#59;</li>
+                  <li>inherit&#59;</li>
+                </ul></td>
+              <td>
+              object &#58;style&#58;justify&#45;justifyContent &#61; &#34;space&#45;between&#34;
+            </td>
+          </tr>
+          <tr>
+            <td>align&#45;items </td>
+            <td>
+              <ul>
+                <li>기본 정렬을 지정</li>
+                <li>항목 정렬 교차 축에서 사용 가능한 공간을 모두 사용		하지 않는 경우 <br>  플렉스 항목을 세로로 정렬합니다&#46;</li>
+              </ul>
+            </td>
+            <td>align&#45;items&#58;
+              <ul>
+                <li>stretch&#59;</li>
+                <li>center&#59;</li>
+                <li>flex&#45;start&#59;</li>
+                <li>fles&#45;end&#59;</li>
+                <li>baseline&#59;</li>
+                <li>initial&#59;</li>
+                <li>inherit&#59;</li>
+              </ul>
+            </td>
+            <td>object &#39;style&#39;alignItems &#61;&#34;center&#34;</td>
+          </tr>
+          <tr>
+            <td>flex&#45;wrap</td>
+            <td>
+              <ul>
+                <li>플랙스 랩 (필요한 경우 유연한 품목을 포장/감쌀지 여부지정)</li>
+                <li>플렉스 아이템을 넣을 공간이 충분하지 않은 경우 </li>
+                <li>플렉스 아이템을 감싸 야하는지 여부를 지정합니다</li>
+              </ul>
+            </td>
+            <td>flex&#45;wrap&#58;
+              <ul>
+                <li>nowrap</li>
+                <li>wrap</li>
+                <li>wrap&#45;reverse</li>
+                <li>initial</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+            <td>object &#46;style&#46;flexWrap &#61; &#34;nowrap&#34;</td>
+          </tr>
+          <tr>
+            <td>align&#45;content</td>
+            <td>flex&#45;wrap 속성의 동작을 수정합니다&#46; <br>
+		정렬 항목과 유사하지만 <br>	플렉스 선을 정렬합니다&#46;</td>
+            <td>align-content&#58;
+              <ul>
+                <li>stretch</li>
+                <li>center</li>
+                <li>flex&#45;start</li>
+                <li>flex&#45;end</li>
+                <li>space&#45;between</li>
+                <li>space&#45;around</li>
+                <li>initial</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+            <td>object &#46;style&#46;alignContent &#61; &#34;center&#34;</td>
+          </tr>
+          <tr>
+            <td>flex&#45;flow</td>
+            <td>
+              <ul>flex&#45;flow숙소는 다음과 같은 속기 속성
+                <li>플렉스 방향</li>
+                <li>플렉스 랩</li>
+              </ul>
+            </td>
+            <td>flex&#45;flow&#58;
+              <ul>
+                <li>flex&#45;direction</li>
+                <li>flex&#45;wrap</li>
+                <li>initial</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+            <td>object &#46;style&#46;flexFlow &#61; &#34;컬럼 nowrap&#34;</td>
+          </tr>
+          <tr>
+            <td>order</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>align&#45;self</td>
+            <td>
+              <ul>
+                <li>주문속성</li>
+                <li>동일한 컨테이너 내의 나머지 항목을 기준으로				항목의 순서를 지정합니다&#46;</li>
+              </ul>
+            </td>
+            <td>align&#45;self&#58;
+              <ul>
+                <li>number</li>
+                <li>initial</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+            <td>object &#46;style&#46;order &#61; &#34;2&#34;</td>
+          </tr>
+          <tr>
+            <td>flex</td>
+            <td>
+              <ul>길이를 설정
+                <li>flex&#45;grow클로우(성장)</li>
+                <li>flex&#45;shrink 플렉스&#45;슈랭키(수축)</li>
+                <li>flex&#45;basis 플렉스&#45;베이써스(기반/기초)</li>
+              </ul>
+            </td>
+            <td>flex&#58;
+              <ul>
+                <li>flex&#45;grow</li>
+                <li>flex&#45;shrink</li>
+                <li>flex&#45;basis</li>
+                <li>auto</li>
+                <li>initial</li>
+                <li>none</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+            <td>object &#46;style&#46;flex &#61; &#34;1&#34;</td>
+          </tr>
+
+
+
+        </table>
+
+
+
+  </body>
+</html>

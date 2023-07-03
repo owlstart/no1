@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>GRID</title>
+
+  </head>
+  <body>
+    <span style="float:right;">
+      <button class="button"><a href="test.html"target="_blank">HTML</a></button>
+      <button class="button2"><a href="test%20TC%20.html"target="_blank">CSS</a></button>
+    <button class=" button3"><a href="test%20TJ.html"traget="_blank">JAVASCRIPT</a></button>
+    <button class="button button4"><a href="test%20TS.html"target="_blank">SQL</a></button>
+    <button class=" button5">
+    <a href="test%20Ti.html"target="_blank">info</a></button>
+
+    </span>
+    <h1>grid</h1>
+    <div id="grid">
+      <ol>
+        <li><a href="test%20기본HTML%20.html"/>HTML TAG</a></li>
+        <li><a href="test.html"/>text</a></li>
+        <li><a href="test1.html"/>border</a></li>
+        <li><a href="test2.html"/>Grid</a></li>
+        <li><a href="test3.html"/>link</a></li>
+        <li><a href="test4.html"/>document</a></li>
+        <li><a href="test5.html"/>bodytag</a></li>
+        <li><a href="test6.html"/>입력속성</a></li>
+        <li><a href="test7.html"/>?</a></li>
+        <li><a href="test70.html"/>?</a></li>
+      </ol>
+
+    <div id="article">
+    <h2 style="color:green;text-decoration:underline">
+     CSS Grid는 CSS Flex와 같이   Container&#40;컨테이너&#41;와 Item&#40;아이템&#41;이라는 두 가지 개념으로 구분되어 있습니다.</h2>
+      Container는 Items를 감싸는 부모 요소이며, 그 안에서 각 Item을 배치할 수 있습니다.
+
+    <h2><ul>Grid Properties
+            <li>Grid Container Properties</li>
+            <li>Grid Item Properties</li>
+       </ul></h2>
+  <hr>
+   <h2>Grid Container Properties</h2>
+   Grid Container를 위한 속성들은 다음과 같습니다.
+
+  <table style="width:100%">
+    <tr style="background-color:greenyellow">
+      <th>속성</th>
+      <th>의미</th>
+    </tr>
+    <tr>
+      <td>display</td>
+      <td>그리드 컨테이너(Container)를 정의</td>
+    </tr>
+    <tr>
+      <td>grid-template-rows</td>
+      <td>명시적 행(track)의 크기를 정의</td>
+    </tr>
+    <tr>
+      <td>grid-template-columns</td>
+      <td>명시적 열&#40;Track&#41;의 크기를 정의</td>
+    </tr>
+    <tr>
+      <td>grid-template-areas</td>
+      <td>영역&#40;Area&#41; 이름을 참조해 템플릿 생성</td>
+    </tr>
+    <tr>
+      <td>grid-template</td>
+      <td>grid-template-xxx의 단축 속성</td>
+    </tr>
+    <tr>
+      <td>row-gap&#40;grid-row-gap&#41;</td>
+      <td>행과 행 사이의 간격&#40;Line&#41;을 정의</td>
+    </tr>
+    <tr>
+      <td>column-gap&#40;grid-column-gap&#41;</td>
+      <td>열과 열 사이의 간격&#40;Line&#41;을 정의</td>
+    </tr>
+    <tr>
+      <td>gap&#40;grid-gap&#41;</td>
+      <td>xxx-gap의 단축 속성</td>
+    </tr>
+    <tr>
+      <td>grid-auto-rows</td>
+      <td>암시적인 행&#40;Track&#41;의 크기를 정의</td>
+    </tr>
+    <tr>
+      <td>grid-auto-columns</td>
+      <td>암시적인 열&#40;Track&#41;의 크기를 정의</td>
+    </tr>
+    <tr>
+        <td>grid-auto-flow</td>
+        <td>자동 배치 알고리즘 방식을 정의</td>
+    </tr>
+    <tr>
+        <td>grid</td>
+        <td>grid-template-xxx과 grid-auto-xxx의 단축 속성</td>
+    </tr>
+    <tr>
+        <td>align-content</td>
+        <td>그리드 콘텐츠(Grid Contents)를 수직(열 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>justify-content</td>
+        <td>그리드 콘텐츠를 수평(행 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>place-content</td>
+        <td>align-content와 justify-content의 단축 속성</td>
+    </tr>
+    <tr>
+        <td>align-items</td>
+        <td>그리드 아이템(Items)들을 수직(열 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>justify-items</td>
+        <td>그리드 아이템들을 수평(행 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>place-items</td>
+        <td>align-items와 justify-items의 단축 속성</td>
+    </tr>
+  </table>
+  <hr>
+  <h2 style="color:green;text-decoration:underline">Grid Item Properties</h2>
+  Grid Item을 위한 속성들은 다음과 같습니다.
+  <table style="width:100%">
+    <tr style="background-color:navajowhite">
+      <th>속성</th>
+      <th>의미</th>
+    </tr>
+    <tr>
+        <td>grid-row-start</td>
+        <td>그리드 아이템(Item)의 행 시작 위치 지정</td>
+    </tr>
+    <tr>
+        <td>grid-row-end</td>
+        <td>그리드 아이템의 행 끝 위치 지정</td>
+    </tr>
+    <tr>
+        <td>grid-row</td>
+        <td>grid-row-xxx의 단축 속성(행 시작/끝 위치)</td>
+    </tr>
+    <tr>
+        <td>grid-column-start</td>
+        <td>그리드 아이템의 열 시작 위치 지정</td>
+    </tr>
+    <tr>
+        <td>grid-column-end</td>
+        <td>그리드 아이템의 열 끝 위치 지정</td>
+    </tr>
+    <tr>
+        <td>grid-column</td>
+        <td>grid-column-xxx의 단축 속성(열 시작/끝 위치)</td>
+    </tr>
+    <tr>
+        <td>grid-area</td>
+        <td>영역(Area) 이름을 설정하거나, grid-row와 grid-column의 단축 속성</td>
+    </tr>
+    <tr>
+        <td>align-self</td>
+        <td>단일 그리드 아이템을 수직(열 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>justify-self</td>
+        <td>단일 그리드 아이템을 수평(행 축) 정렬</td>
+    </tr>
+    <tr>
+        <td>place-self</td>
+        <td>align-self와 justify-self의 단축 속성</td>
+    </tr>
+    <tr>
+        <td>order</td>
+        <td>그리드 아이템의 배치 순서를 지정</td>
+    </tr>
+    <tr>
+        <td>z-index</td>
+        <td>그리드 아이템의 쌓이는 순서를 지정</td>
+    </tr>
+  </table>
+  <hr>
+  <h2>Grid Containers</h2>
+     <h3><ul>
+       <li>display</li></h3>
+       <p>Grid Container(컨테이너)를 정의합니다.
+정의된 컨테이너의 자식 요소들은 자동으로 Grid Items(아이템)로 정의됩니다.</p>
+   <h3 style="text">
+     &nbsp;&nbsp;&nbsp;&nbsp;&comma;container &#123;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display&colon; grid&semi;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    &#125; <br> <a href="https://heropy.blog/2019/08/17/css-grid/">Grid 출처</a></h3>
+    <div id="div">
+     <h4>그리드를 사용하기 위해 컨테이너에 필수로 작성합니다! <br>
+       <br>
+       <table style="border:center;width:100%;">
+         <tr style="background;darkgray ">
+           <th>값</th>
+           <th>의미</th>
+         </tr>
+         <tr>
+            <td>grid</td>
+            <td>Block 특성의 Grid container를 정의</td>
+         </tr>
+         <tr>
+            <td>inline-grid</td>
+            <td>Inline 특성의 Grid Container를 정의</td>
+         </tr></h4>
+         </table>
+     </ul>
+
+  </body>
+</html>

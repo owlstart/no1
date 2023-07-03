@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>java외부파일</title>
+  </head>
+  <body>
+    <span style="float:right;">
+      <button class="button">
+        <a href="test.html"target="_blank">HTML</a></button>
+      <button class="button2">
+        <a href="test%20TC%20.html"target="_blank">CSS</a></button>
+      <button class="button3">
+        <a href="test%20TJ.html"target="_blank">JAVASCRIPT</a></button>
+      <button class="button button">
+        <a href="test%20TS.html"target="_blank">SQL</a></button>
+      </span>
+
+      <h1>외부파일</h1>
+      <div id="grid">
+      <ol>
+        <li><a href="test%20TJ.html"target="_self">javascript</a></li>
+        <li><a href="test%20TJ1.html"target="_self">JS문</a></li>
+        <li><a href="test%20TJ7.html"target="_self">JS문법</a></li>
+        <li><a href="test%20TJ2.html"target="_self">배열</a></li>
+        <li><a href="test%20TJ3.html"target="_self">태그</a></li>
+        <li><a href="test%20TJ4.html"target="_self">객체속성</a></li>
+        <li><a href="test%20TJ5.html"target="_self">외부파일</a></li>
+        <li><a href="test%20TJ6.html"target="_self">출력</a></li>
+        <li><a href="test%20TJ8.html"target="_self">제약조건유효</a></li>
+      </ol>
+      <div id="article">
+
+        <h2>외부파일</h2>
+        <mark>스크립트는 외부 파일에 배치 할수도 있습니다.</mark>
+        <h2>외부 파일&#58;myScript.js</h2>
+        <strong> <mark style="color:blue">function</mark>&nbsp; myFunction() { <br>
+          document.getElementById(<mark>"demo"</mark>).innerHTML = <mark>"pqrqgraph changed."</mark>;<br>
+        } </strong>
+        <p>외부 스크립트는 어러 웹 페이지에서 동일한 코드가 사용될대 실용적입니다. <br><strong>JavaScript</strong>파일의 파일 확장자는 <strong>.js</strong>입니다 <br>외부 스크립트를 사용하려면 스크립트 파일 이름을 태그 의 <strong> <mark>src</mark>소스 속성 </strong>에 넣으십시오. <strong> <mark>&lt;script&gt;</mark> </strong>.  </p>
+
+        <h2>예</h2>
+        <h2>        <strong style="color:red">&lt;script src</strong>= <strong style="color:blue">"myScript.js"</strong> <strong style="color:red">&gt;&lt;&sol;script&gt;</strong></h2>
+
+        <h2> <strong style="color:red">&lt;head&gt;</strong>또는 원하는 <strong style="color:red">&lt;body&gt;</strong>대로 외부 스크립트 참조를 배치 할수 있습니다. <br>스크립트는 <strong style="color:red">&lt;script&gt;</strong>태그가 있는 위치에 있는 것처럼 동작 합니다. </h2>
+
+        <h2> <mark>외부 스크립트는</mark> <strong> <mark>&lt;script&gt;</mark> </strong>태그를 포함 할수 없습니다 </h2>
+        <hr>
+        <h2>외부 JavaScript 장점</h2>
+        <mark>외부 파일에 스크립트를 배치하면 몇 가지 장점이 있습니다.</mark>
+        <h2>
+          <ul>
+            <li>HTML 과 코드를 분리 합니다</li>
+            <li>HTML 및 JavaScript를 보다 쉽게 읽고 유지 관리 할수 있습니다.</li>
+            <li>캐시 된 JavaScript 파일은 페이지오드 속도를 높일수 있습니다.</li>
+          </ul>
+
+        </h2>
+
+        <h2>외부 참조</h2>
+        <p>외부 스크립트는 전체 <strong> URLstrong>  또는 현재 웹 페이지에 상대적인 경로를 사용하여 참조 할 수 있습니다.
+
+이 예제는 전체 URL을 사용하여 스크립트에 연결합니다.</p>
+
+<h2>한 페이지에 여러 스크립트 파일을 추가하려면 <br>여러 스크립트 태그를 사용하십시오.  <br><mark><script src="myScript1.js"></script>
+<script src="myScript2.js"></script></mark> </h2>
+
+
+
+<h2>예</h2>
+<h2><script src="URL.com/js/myScript1.js"></script></h2>
+<br>
+<body>
+
+<h2>External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+<script src="/js/myScript.js"></script>
+
+</body>
+
+
+&lt;body&gt; <br>
+
+&lt;h2&gt;External JavaScript&lt;&sol;h2&gt; <br>
+
+&lt;p id&#61;&#34;demo&#34;&gt;A Paragraph&#46;&lt;&sol;p&gt; <br>
+
+&lt;button type&#61;&#34;button&#34; <br> onclick&#61;&#34;myFunction&#40;&#41;&#34;&gt;Try it&lt;&sol;button&gt; <br>
+
+&lt;p&gt;&#40;myFunction is stored in an external file called <br> &#34;myScript&#46;js&#34;&#41;&lt;&sol;p&gt; <br>
+
+&lt;script src&#61;&#34;&sol;js&sol;myScript&#46;js&#34;&gt;&lt;&sol;script&gt; <br>
+
+&lt;&sol;body&gt; <br>
+
+
+<script src="myScript1.js"></script>
+<script src="myScript2.js"></script>
+
+
+ 전체 URL을 사용하여 스크립트에 연결합니다
+<script src="https://www.w3schools.com/js/myScript1.js"></script>
+
+
+ 현재 웹 사이트의 지정된 폴더에있는 스크립트를 사용합니다.
+ <script src="/js/myScript1.js"></script>
+
+
+
+현재 페이지와 동일한 폴더에있는 스크립트에 연결됩니다.
+<script src="myScript1.js"></script>
+
+
+<hr>
+<h2>HTML 파일경로</h2>
+
+
+<img src = "picture.jpg">	picture.jpg는 현재 페이지와 동일한 폴더에 있습니다
+<img src = "images / picture.jpg">	picture.jpg는 현재 폴더의 이미지 폴더에 있습니다.
+<img src = "/ images / picture.jpg">picture.jpg는 현재 웹 루트의 이미지 폴더에 있습니다.
+<img src = "../ picture.jpg">	picture.jpg는 현재 폴더에서 한 단계 위의 폴더에 있습니다.
+
+파일 경로는 웹 사이트의 폴더 구조에서 파일의 위치를 ​​설명합니다.
+
+파일 경로는 다음과 같은 외부 파일에 연결할 때 사용됩니다.
+
+<h2>절대 파일 경로</h2>
+<h4>절대 파일 경로는 인터넷 파일의 전체 URL입니다.</h4>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+<h2>상대 파일 경로</h2>
+<h4>상대 파일 경로는 현재 페이지를 기준으로 파일을 가리 킵니다. <br>
+
+이 예제에서 파일 경로는 현재 웹의 루트에있는 이미지 폴더의 파일을 가리 킵니다.</h4>
+<img src="/images/picture.jpg" alt="Mountain">
+
+
+파일 경로는 현재 폴더에있는 images 폴더의 파일을 가리 킵니다.
+<img src="images/picture.jpg" alt="Mountain">
+
+
+ 파일 경로는 현재 폴더보다 한 수준 위에있는 폴더에있는 images 폴더의 파일을 가리 킵니다.
+<img src="../images/picture.jpg" alt="Mountain">
+
+
+&lt;script src&#61;&#34;myScript1.js&#34;&gt;&lt;&sol;script&gt;
+&lt;script src&#61;&#34;myScript2.js&#34;&gt;&lt;&sol;script&gt;
+
+
+ 전체 URL을 사용하여 스크립트에 연결합니다
+&lt;script src&#61;&#34;https:&sol;&sol;www.w3schools.com&sol;js&sol;myScript1.js&#34;&gt;&lt;&sol;script&gt;
+
+
+ 현재 웹 사이트의 지정된 폴더에있는 스크립트를 사용합니다.
+ &lt;script src&#61;&#34;&sol;js&sol;myScript1.js&#34;&gt;&lt;&sol;script&gt;
+
+
+
+현재 페이지와 동일한 폴더에있는 스크립트에 연결됩니다.
+&lt;script src&#61;&#34;myScript1.js&#34;&gt;&lt;&sol;script&gt;
+
+
+&lt;hr&gt;
+&lt;h2&gt;HTML 파일경로&lt;&sol;h2&gt;
+
+
+&lt;img src &#61; &#34;picture.jpg&#34;&gt;	picture.jpg는 현재 페이지와 동일한 폴더에 있습니다
+&lt;img src &#61; &#34;images &sol; picture.jpg&#34;&gt;	picture.jpg는 현재 폴더의 이미지 폴더에 있습니다.
+&lt;img src &#61; &#34;&sol; images &sol; picture.jpg&#34;&gt;picture.jpg는 현재 웹 루트의 이미지 폴더에 있습니다.
+&lt;img src &#61; &#34;..&sol; picture.jpg&#34;&gt;	picture.jpg는 현재 폴더에서 한 단계 위의 폴더에 있습니다.
+
+파일 경로는 웹 사이트의 폴더 구조에서 파일의 위치를 ​​설명합니다.
+
+파일 경로는 다음과 같은 외부 파일에 연결할 때 사용됩니다.
+
+&lt;h2&gt;절대 파일 경로&lt;&sol;h2&gt;
+&lt;h4&gt;절대 파일 경로는 인터넷 파일의 전체 URL입니다.&lt;&sol;h4&gt;
+&lt;img src&#61;&#34;https:&sol;&sol;www.w3schools.com&sol;images&sol;picture.jpg&#34; alt&#61;&#34;Mountain&#34;&gt;
+
+&lt;h2&gt;상대 파일 경로&lt;&sol;h2&gt;
+&lt;h4&gt;상대 파일 경로는 현재 페이지를 기준으로 파일을 가리 킵니다. &lt;br&gt;
+
+이 예제에서 파일 경로는 현재 웹의 루트에있는 이미지 폴더의 파일을 가리 킵니다.&lt;&sol;h4&gt;
+&lt;img src&#61;&#34;&sol;images&sol;picture.jpg&#34; alt&#61;&#34;Mountain&#34;&gt;
+
+
+파일 경로는 현재 폴더에있는 images 폴더의 파일을 가리 킵니다.
+&lt;img src&#61;&#34;images&sol;picture.jpg&#34; alt&#61;&#34;Mountain&#34;&gt;
+
+
+ 파일 경로는 현재 폴더보다 한 수준 위에있는 폴더에있는 images 폴더의 파일을 가리 킵니다.
+&lt;img src&#61;&#34;..&sol;images&sol;picture.jpg&#34; alt&#61;&#34;Mountain&#34;&gt;
+
+
+
+      </body>
+      </html>

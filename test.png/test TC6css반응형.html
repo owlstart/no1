@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>CSS반응형</title>
+  </head>
+  <body>
+    <span style="float:right;">
+    <button class="button"><a href="test.html"target="_blank">HTML</a></button>
+    <button class="button2"><a href="test%20TC%20.html"target="_blank">CSS</a></button>
+    <button class=" button3"><a href="test%20TJ.html"traget="_blank">JAVASCRIPT</a></button>
+    <button class="button button4"><a href="test%20TS.html"target="_blank">SQL</a></button>
+    <button class=" button5">
+    <a href="test%20Ti.html"target="_blank">info</a></button>
+
+  </span>
+
+  <h1>CSS반응형</h1>
+    <div id="grid">
+      <ol>
+        <li><a href="test%20TC%20.html" target="_self">css</a></li>
+        <li><a href="test%20TC2.html" target="_self">CSS 속성</a></li>
+        <li><a href="test%20TC1.html" target="_self">CSS Float</a></li>
+        <li><a href="test%20TC3.html" target="_self">box-sizing</a></li>
+        <li><a href="test%20TC4.html" target="_self">CSS link</a></li>
+        <li><a href="test%20TC5%20.html" target="_self">height</a></li>
+        <li><a href="test%20TC5%20.html" target="_self">CSS block</a></li>
+        <li><a href="test%20TC6.html"target="_self">RWD반응형</a></li>
+        <li><a href="test%20TC8.html"target="_self">border</a></li>
+        <li><a href="test%20TC9.html"target="_self">Selectors</a></li>
+
+      </ol>
+      <div id="article">
+        <h2>CSS반응형 웹디자인-뷰포트 </h2>
+        <ul>
+          <li> <a href="test%20TCrwd.html"target="_blank">RWD반응형</a> </li>
+        </ul>
+        <h3>뷰포트란 무엇입니까&#63;</h3>
+        <br>
+        <p>뷰포트는 웹 페이지에서 사용자가 볼수 있는 영역입니다. <br>뷰포트는 장치에 따라 다르며 컴퓨터 화면보다 휴대 전화에서 더 작습니다. <br>태블릿과 휴대 전솨 이전에는 웹 페이지가 컴퓨터 화면 전용으로 설계되었으며 웹 페이지는 정적 디자인과 고정 크기를 갖는 것이 일반적이 었습니다. <br><br>그런다음 태블릿과 휴대 전화를 사용하여 인터넷 서핑을 시작 했을 때 고정 크기 웹 페이지가 너무커서 뷰포트에 맞지 않았습니다. <br>이 문제를 해결하기 위해 해당 장치의 브라우저는 전체 웹 페이지를 화면에 맞게 축소 했습니다.</p>
+     <h2>뷰포트 설정</h2>
+     <p>HTML5는 웹 디자이너가 <mark>&lt;meta&gt;</mark>태그를 통해 뷰포트를 제어 할수 있는 방법을 도입했습니다. </p><br><br> <mark>&lt;meta&gt;</mark>모든 웹 페이지에 다음 뷰포트 요소를 포함해야 합니다. <br>
+
+     &lt;meta name="viewport:" content="widht=device-width,initial-scale=1.0"&gt;
+
+
+     <meta>뷰포트 요소는 페이지의 크기와 스케일링을 제어 하는 방법에 브아우저 지침을 제공 합니다.
+
+     이 <span>width=device-widht </span>부분은 장치의 화면 너비에 따라 페이지 너비를 설정합니다.
+
+     <span>initial-scale=1.0</span>부분은 페이지가 처음 브라우저에 의해 로드 된 초기줌 레벨을 설정 합니다.
+
+     다음은 뷰포트 메타 태그가 없는 웹 페이지 와 뷰포트 메타 택가 있는 동일한 웹 페이지의 예 영역입니다.
+
+     <strong>팁&#59;</strong>휴대 전화나  태블릿으로 페이지를 탐색하는 경우 아래 두 링크를 클릭하여 차이점을 확인 할수 있습니다.
+     <h1>뷰포트에 내용 크기</h1>
+     <p>사용자는 데스크탑 과 모바일 장치 모두에서 웹 사이트를 세로로 스크롤 하지만 가로로는 사용하지 않았습니다. <br>따라서 사용자기 전체 웹 페이지를 보기 위해 가로로 스크롤 하거나 축소하면 사용자 환경이 저하됩니다. </p>
+     <h2>따라야할 몇가지 추가 규칙</h2>
+     <ul>
+       <li>큰 고정 너비 요소를 사용하지 마십시요.</li>
+       <p>이미지가 뷰포트 보다 넓은 너비로 표시되면 뷰포트가 가로로 스크롤 될수 있습니다. <br>뷰 포트 너비에 맞게 조정 해야 합니다.</p>
+       <li>내용을 잘 렌더링 하기 위해 특정 뷰포트 너지에 의존하지 않도록 하십시요.</li>
+       <p>CSS 픽셀의 화면 크기와 너비는 장치마다 크게 다르므로 내용을 잘 렌더링 하기 위해 특정 뷰포트 너비에 의존해서는 안됩니다.</p>
+       <li>CSS 미디어 쿼리를 사용하여 작고 큰 화면에 다른 스타일 적용</li>
+       <p>페이지 요소에 절대 CSS 너비를 크게 설정하면 요소가 더 작은 장치의 뷰포트에 비해 너무 넓습니다. <span>width&#58;100&#37;</span>와 같은 상대 너비 값을 사용하십시요. <span>위치 결정 값이 큰지 주의</span>작은 장치에서는 요소가 뷰포트 밖으로 떨어질수 있습니다. </p>
+     </ul>
+     <hr>
+  <h2>그리드 뷰란&#63; <br>많은 웹 페이지는 격자보기를 기반으로 합니다. <br><span>페이지가 열로 나뉩니다.</span> </h2>
+  <p>격자보기를 사용하면 웹 페이지를 디자인 할때 매우 유용합니다. <br>반응 형 그리드 뷰에는 <br> <mark>12개의 열이 있으며 <br> 총 너비가 100&#37;이며 <br> 브라우저 창의 크기를 조정하면 <span>축소 및 확장</span>됩니다. </mark> </p>
+  <hr>
+  <h2>반응형 그리드 뷰 작성</h2>
+  <h4>반응형 그리드 뷰 구축 <br>모든 HTML요소의 <mark>box-sizing</mark> 속성으로 설정되어 잇는지 확인 <br> <mark>border-box</mark>이렇게 하면 패딩 과 테두리 요소가 총 너비와 높이에 포함이 됩니다. </h4>
+  <h2>CSS 코드 추가</h2>
+  <div class="mim">
+    <strong>&#42;&#123; <br>box-siwing&#58;&nbsp;border-box&#59;<br>&#125; </strong>
+<br><br> <strong>예</strong><br> <a href="file:///D:/ago/%EC%83%88%20%ED%8F%B4%EB%8D%94/css%EB%B0%98%EC%9D%91%ED%98%95%20Grid.html"target="_blank">간단한 반응형 웹페이지</a>
+.menu{
+  widht: 25%;
+  float: left;
+}
+.main{
+  width: 75%;
+  float: left;
+}
+
+&lt;strong&gt;직접실행&lt;&sol;strong&gt; <br>
+&lt;html lang&#61;&#34;KO&#34;&gt; <br>
+&lt;!DOCTYPE html&gt; <br>
+   <span>&lt;head&gt;</span> <br>
+    &lt; <span>meta</span> charset&#61;<span style="color: blue;">&#34;utf-8&#34;</span>&gt; <br>
+    <span>&lt;style&gt;</span> <br>
+    <span>&#42;</span>&lcub; <br>
+      <span>box-sizing</span>&#58; border-box&#59; <br>
+    &rcub; <br>
+    <span class="span1">&#46;header</span>&lcub; <br>
+      border&#58;1px sloid red&#58; <br>
+      padding&#58; 15&#59; <br>
+    &rcub; <br>
+    <span class="spen2">&#46;menu</span>&lcub; <br>
+      width&#58;25%&#59; <br>
+      float&#58; left&#59; <br>
+      padding&#58; 15px;&#59; <br>
+      border&#58;1px solid red&#59; <br>
+    &rcub; <br>
+    &#46;main&lcub; <br>
+      width&#58;75%&#59; <br>
+      float&#58; left&#59; <br>
+      padding&#58; 15px&#59; <br>
+      border&#58; 1px solid red&#59; <br>
+    &rcub; <br>
+    &lt;&sol;style&gt; <br>
+    &lt;title&gt;CSS반응형&lt;&sol;title&gt; <br>
+  &lt;&sol;head&gt; <br>
+  &lt;body&gt; <br>
+&lt;div class&#61;&#34;header&#34;&gt; <br>
+  &lt;h1&gt;반응하는 반응형&lt;&sol;h1&gt; <br>
+&lt;&sol;div&gt; <br>
+&lt;div class&#61;&#34;menu&#34;&gt; <br>
+  &lt;ul&gt; <br>
+    &lt;li&gt;반갑습니다&lt;&sol;li&gt; <br>
+    &lt;li&gt;감사합니다&lt;&sol;li&gt; <br>
+    &lt;li&gt;고맙습니다&lt;&sol;li&gt; <br>
+    &lt;li&gt;덕분입니다&lt;&sol;li&gt; <br>
+  &lt;&sol;ul&gt; <br>
+&lt;&sol;div&gt; <br>
+&lt;div class&#61;&#34;main&#34;&gt; <br>
+  &lt;h1&gt;반응형 웹디자인 &lt;&sol;h1&gt; <br>
+  &lt;p&gt;웹 페이지에 두 개의 열만 포함 된 경우 위의 예가 적합합니다.
+
+그러나 웹 페이지를보다 강력하게 제어하기 위해 열이 12 개인 반응 형 그리드 뷰를 사용하려고합니다.
+
+먼저 하나의 열에 대한 백분율을 계산해야합니다 : 100 % / 12 열 = 8.33 %.
+
+그런 다음 12 개의 열 각각에 대해 하나의 클래스를 만들고 class="col-"섹션이 확장해야하는 열 수를 정의하는 숫자 를 만듭니다 .&lt;&sol;p&gt; <br>
+&lt;&sol;div&gt; <br>
+  &lt;&sol;body&gt; <br>
+&lt;&sol;html&gt; <br>
+
+
+
+
+</body>
+</html>

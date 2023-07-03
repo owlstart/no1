@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test style.css">
+    <title>cssSelectors</title>
+  </head>
+  <body>
+    <span style="float:right;">
+    <button class="button"><a href="test.html"target="_blank">HTML</a></button>
+    <button class="button2"><a href="test%20TC%20.html"target="_blank">CSS</a></button>
+    <button class="button button3"><a href="test%20TJ.html"target="_blank">JAVASCRIPT</a></button>
+    <button class="button button4"><a href="test%20TS.html"target="_blank">SQL</a></button>
+    <button class=" button5">
+    <a href="test%20Ti.html"target="_blank">info</a></button>
+
+
+    </span>
+
+    <h1>CSS태그</h1>
+    <div id="grid">
+    <ol>
+      <li><a href="test%20TC%20.html" target="_self">css</a></li>
+      <li><a href="test%20TC2.html" target="_self">CSS 속성</a></li>
+      <li><a href="test%20TC1.html" target="_self">CSS Float</a></li>
+      <li><a href="test%20TC3.html" target="_self">box-sizing</a></li>
+      <li><a href="test%20TC4.html" target="_self">CSS link</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">height</a></li>
+      <li><a href="test%20TC5%20.html" target="_self">CSS block</a></li>
+      <li><a href="test%20TC6.html"target="_self">RWD반응형</a></li>
+      <li><a href="test%20TC8.html"target="_self">border</a></li>
+      <li><a href="test%20TC9.html"target="_self">Selectors</a></li>
+
+    </ol>
+    <div id="article">
+        <h2>Selectors</h2>
+        <h3>css 선택기는 스타릴을 지정할 HTML요소를 "찾기"또는 선택 하는데 사용</h3>
+        <h3>CSS단순 선택기는</h3>
+        <table class="mytable">
+          <tr>
+            <th>Select 선택</th>
+            <th>Example 예</th>
+            <th>Example Description 설명</th>
+            <th>css구문 <br>
+                .class{ <br>
+                  class declarations <br>
+                }</th>
+            <th>해보기</th>
+          </tr>
+          <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>class="intro"모든 요소를 선택</td>
+            <td>.class{
+                  .intro{ <br>
+                    background-color: yellow; <br>
+                  }</td>
+            <td><span>&#60;style&#62;</span>   <br>
+              <span>&#46;intro</span>   { <br>
+              background-color&#58; yellow&#59; <br>
+            } <br>
+
+              <span>&#60;/style&#62;</span>   <br>
+              <span>&#60;/head&#62;</span> <br>
+              <span>&#60;body&#62;</span>   <br>
+              <span>&#60;p class&#61;</span>  &#34;intro&#34; <span>&#62;</span> My best friend is Mickey&#46; <span>&#60;&#47;p&#62;</span>  <br>
+              <span>&#60;div class&#61;</span>  &#34;intro&#34; <span>&#62;</span>  <br>
+              <span>&#60;p&#62;</span>  반갑습니다 <span>&#60;&#47;p&#62;</span>  <br>
+              <span>&#60;p&#62;</span>  감사합닌다 <span>&#60;&#47;p&#62;</span>  <br>
+              <span>&#60;&#47;div&#62; </span>  <br>
+              <span>&#60;p&#62;</span>  안녕하세요 <span>&#60;&#47;p&#62;</span>  <br>
+              <span>&#60;&#47;body&#62;</span>   <br>
+              <span>&#60;&#47;html&#62;</span>   <br>
+</td>
+          </tr>
+          <tr>
+            <td>&#35;id</td>
+            <td>&#35;firstname</td>
+            <td>id&#61;&#35;firstname&#34;인 요소를 선택</td>
+            <td>&#35;firstname &#123; <br>
+              background-color:yellow&#59;
+            &#125; <br> </td>
+            <td>  <span>&#60;&#47;head&#62;</span> <br>
+              <span>&#60;style &#62;</span> <br>
+              <span>&#35;firstname</span>
+                &#123; <br>
+                  background&#45;color&#58; yellow
+                  &#59; <br>
+
+                &#125; <br>
+              <span> &#60;&#47;style&#62;</span> <br>
+              <span>&#60;body&#62;</span> <br>
+                <span>&#60;h1&#62;</span> id 선택자 이름 지정 펄스트네임 선택자 <span>&#60;&#47;h1&#62;</span>  <br>
+                <span>&#60;div class&#61;&#34;intro&#34;&#62;</span> <br>
+                  <span>&#60;p id&#61;&#34;firstname&#34;&#62;</span> &lt;div&gt;안에 있는&lt;p&gt;요소에 아이디 <span>&#35;firstname</span> 이름지정 스타일 지정  <span>&#60;&#47;p&#62;</span>  <br>
+                  <span> &#60;p id&#61;</span>&#34;hometown&#34;&#62;&lt;div&gt;안에 있는&#60;&lt;p&gt;요소에 아이디 &#35;firstname 이름지정 하지않고 다른 이름 지정 <span>&#60;&#47;p&#62;</span>  <br>
+                <span>&#60;&#47;div&#62;</span> <br>
+
+                <span>&#60;p id&#61;</span> &#34;firstname&#34;&#62;&lt;p&gt;단락 태그안에 아이디 firstname 이름지정 <span>&#60;&#47;p&#62;</span> <br>
+                <span>&#60;p&#62;&lt;p&gt;</span> 단락 태그안에 아이디 지정 이름 firstname 이름 지정 하지않음 <span>&#60;&#47;p&#62;</span>  <br>
+
+              <span>&#60;&#47;body&#62;</span> <br>
+              <span>&#60;&#47;html&#62;</span> <br></td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>모든 요소를선택</td>
+            <td>* {
+    background-color: yellow;
+}</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>element</td>
+            <td>P</td>
+            <td>모든&lt;p&gt;요소를 선택</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>element&comma;element&comma;&#46;&#46;&#46;</td>
+            <td>div&comma;p</td>
+            <td>모든&lt;div&gt; 요소와 &lt;p요소&gt; 선택</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
